@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(assets/background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+:root{
+    --color-li: #fff;
+}
+/* We are starting to decorate our navigation bar*/
+/* We are spliting our logo with are nav links*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 6%;
+}
+/* We are positioning our nav link in the right */
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+/* Here we make our nav links look better with remove the deafult styling */
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+/* Here we make our nav links look better with remove the deafult styling */
+.nav-links ul li a{
+    color: var(--color-li);
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-links ul li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li a:hover::after{
+    width: 100%;
+}
+#welcome{
+    display: flex;
+    justify-content: center;
+    color: var(--color-li);
+}
+.article-1, .article-2{
+    color: var(--color-li);
+    display: flex;
+    justify-content: center;
+    padding: 10% 25%;
+}
+/* Here we start building our website for mobile devices */
+@media(max-width: 700px){
+    /* We start with our navbar */
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: cadetblue;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+    }
+}
