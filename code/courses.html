@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://use.fontawesome.com/b362f32b66.js"></script>
     <title>Mooc</title>
 </head>
 <body>
     <header>
         <nav>
-            <a href="index.html"><p>Logo</p></a>
-            <div class="nav-links">
+            <a href="index.html"><img src="assets/logo.png" alt="logo" width="200" height="120"></a>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-times-circle" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="courses.html">Courses</a></li>
@@ -19,13 +21,30 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
     </header>
     <main>
-       
+       <div class="courses">
+
+        <div class="technical">
+            <img src="assets/civil.jpg" alt="techical photo">
+            <h2>Civil Engineer</h2>
+        </div>
+        <div class="it">
+            <img src="assets/it.jpg" alt="laptop">
+            <h2>Software Engineer</h2>
+        </div>
+        <div class="literature">
+            <img src="assets/literature.jpg" alt="guy-reading-books">
+            <h2>Literature</h2>
+        </div>
+
+       </div>
     </main>
     <footer>
 
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

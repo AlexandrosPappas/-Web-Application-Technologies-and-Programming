@@ -5,13 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://use.fontawesome.com/b362f32b66.js"></script>
     <title>Mooc</title>
 </head>
 <body>
     <header>
         <nav>
-            <a href="index.html"><p>Logo</p></a>
-            <div class="nav-links">
+            <a href="index.html"><img src="assets/logo.png" alt="logo" width="200" height="120"></a>
+            <div class="nav-links" id="nav-links">
+                <!-- <i class="fa fa-times-circle" onclick="hideMenu()"></i> -->
+                <i class="fa fa-times-circle" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="courses.html">Courses</a></li>
@@ -19,13 +22,48 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
     </header>
     <main>
-       
+        <div class="creators">
+            <div class="alexandros-pappas">
+                <img src="assets/alexandros-pappas.jpg" alt="1st-creator-photo">
+                <article>
+                    <h1>Alexandros Pappas</h1>
+                    <h2>3180243</h2>
+                    <p>Hi there, my name is Alexandros Pappas. I live in Athens<br>
+                        Greece and i am studyung Comptuter Science💻 at<br> 
+                        Athens University of Economics and Business.<br>
+                        Extremely motivated to constantly develop my skills <br>
+                        and grow professionally.<br>
+                        🔭 I’m currently working on personal projects.<br>
+                        🌱 I’m currently learning HTML CSS and Javascript.<br>
+                        📫 How to reach me: <a href="mailto:pappas.g.alexandros@gmail.com">pappas.g.alexandros@gmail.com</a>
+                    </p>
+                </article>
+            </div>
+            <div class="efthymis-efthymiadis">
+                <img src="assets/efthymis-efthymiadis.jpg" alt="2nd-creator-photo">
+                <article>
+                    <h1>Efthymis Efthymiadis</h1>
+                    <h2>3180054</h2>
+                    <p>
+                        Hi there, my name is Efthymis Efthymiadis. I live in Athens<br>
+                        Greece and i am studyung Comptuter Science💻 at<br>
+                        Athens University of Economics and Business.<br>
+                        I am a team player who wants to develop my skills<br>
+                        🔭 I’m currently working on personal projects.<br>
+                        🌱 I’m currently learning HTML CSS and Javascript.<br>
+                        📫 How to reach me: <a href="mailto:efthymis2@gmail.com">efthymis2@gmail.com</a>
+                    </p>
+                </article>
+            </div>
+        </div>
     </main>
     <footer>
 
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
