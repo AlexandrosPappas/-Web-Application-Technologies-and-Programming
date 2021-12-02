@@ -59,6 +59,10 @@ nav .fa{
     justify-content: center;
     color: var(--color-li);
 }
+#teacher{
+    width: 500px;
+    height: 400px;
+}
 .article-1, .article-2{
     color: var(--color-li);
     display: flex;
@@ -92,15 +96,28 @@ nav .fa{
 /* Here we start styling courses */
 .courses{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 .courses img{
     width: 500px;
     height: 400px;
 }
-.courses .technical h2, .courses .it h2, .courses .literature h2{
+.courses .technical h2, .courses .it h2, .courses .literature h2, .courses .it .it-a p, .courses .technical .civil p, .courses .literature .literature-a p{
     color: var(--color-li);
-} 
+}
+.it-a, .civil, .literature-a{
+    text-align: center;
+}
+/* Here we start styling our IT page*/
+.it-courses{
+    display: flex;
+    justify-content: space-evenly;
+}
+.it-courses, .it-courses .front-end h2, .it-courses .front-end p, .it-courses .back-end h2, .it-courses .back-end p, .it-courses .ai h2, .it-courses .ai p{
+    color: var(--color-li);
+    text-align: center;
+}
 @media(max-width: 700px){
     /* We start with our navbar */
     .nav-links ul li{
