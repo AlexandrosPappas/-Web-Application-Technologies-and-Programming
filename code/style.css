@@ -9,6 +9,9 @@ body{
     position: relative;
 
 }
+main{
+    padding-top: 5%;
+}
 :root{
     --color-li: #fff;
 }
@@ -50,10 +53,13 @@ nav{
 .nav-links ul li a:hover::after{
     width: 100%;
 }
+/* .nav-links ul li a:active{
+    color: #f44336;
+} */
 nav .fa{
     display: none;
 }
-/* INDEX styling */
+/***************************** INDEX styling *****************************/
 #welcome{
     display: flex;
     justify-content: center;
@@ -69,12 +75,12 @@ nav .fa{
     justify-content: center;
     padding: 10% 25%;
 }
+/***************************** ABOUT US *****************************/
 /*Here we start styling ABOUT US */
 .creators{
     display: flex;
-    justify-content: space-around
-    /* display: grid;
-    grid-template-columns: 50% 50%; */
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 /* inserting photo for Alex */
 .creators .alexandros-pappas img{
@@ -93,11 +99,12 @@ nav .fa{
 .creators .efthymis-efthymiadis h1, .creators .efthymis-efthymiadis h2, .creators .efthymis-efthymiadis article p, .creators .efthymis-efthymiadis article p a{
     color: var(--color-li);
 }
+/***************************** COURSES *****************************/
 /* Here we start styling courses */
 .courses{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
 }
 .courses img{
     width: 500px;
@@ -106,18 +113,52 @@ nav .fa{
 .courses .technical h2, .courses .it h2, .courses .literature h2, .courses .it .it-a p, .courses .technical .civil p, .courses .literature .literature-a p{
     color: var(--color-li);
 }
-.it-a, .civil, .literature-a{
+/* .it-a, .civil, .literature-a{
     text-align: center;
-}
+} */
+/***************************** IT *****************************/
 /* Here we start styling our IT page*/
 .it-courses{
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 .it-courses, .it-courses .front-end h2, .it-courses .front-end p, .it-courses .back-end h2, .it-courses .back-end p, .it-courses .ai h2, .it-courses .ai p{
     color: var(--color-li);
     text-align: center;
 }
+/************* Here we style our front-end*************/
+.front-end-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: var(--color-li);
+    text-align: center;
+}
+/************* Here we start styling our back-end *************/
+.back-end{
+    color: var(--color-li);
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.sql{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+/************* Here we start styling Big data *************/
+.big-data-cont{
+    color: var(--color-li);
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+/* **************************** CIVIL *****************************/
+.civil-courses{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: var(--color-li);
+    text-align: center;
+}
+/************* Mobile version *************/
 @media(max-width: 700px){
     /* We start with our navbar */
     .nav-links ul li{
@@ -143,5 +184,10 @@ nav .fa{
     }
     .nav-links ul {
         padding: 30px;
+    }
+    .courses{
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
     }
 }
