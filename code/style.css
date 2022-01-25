@@ -9,6 +9,9 @@ body{
     position: relative;
 
 }
+img{
+    border-radius:20px
+}
 main{
     padding-top: 5%;
 }
@@ -107,6 +110,7 @@ nav .fa{
 .creators .alexandros-pappas img{
     width: 300px;
     height: 300px;
+    border-radius: 20px;
 }
 /* putting color in   */
 .creators .alexandros-pappas h1, .creators .alexandros-pappas h2, .creators .alexandros-pappas article p, .creators .alexandros-pappas article p a{
@@ -116,6 +120,7 @@ nav .fa{
 .creators .efthymis-efthymiadis img{
     width: 300px;
     height: 300px;
+    border-radius: 20px;
 }
 .creators .efthymis-efthymiadis h1, .creators .efthymis-efthymiadis h2, .creators .efthymis-efthymiadis article p, .creators .efthymis-efthymiadis article p a{
     color: var(--color-li);
@@ -132,6 +137,7 @@ nav .fa{
 .courses img{
     width: 100%;
     height: auto;
+    border-radius: 20px;
 }
 .courses .technical h2, .courses .it h2, .courses .literature h2, .courses .it .it-a p, .courses .technical .civil p, .courses .literature .literature-a p{
     color: var(--color-li);
